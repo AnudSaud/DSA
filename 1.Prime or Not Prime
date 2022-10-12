@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i,n,count=0;
+    cout<<"Enter n"<<endl;
+    cin>>n;
+    for(i=1; i<=n; i++)
+     {
+         if(n%i==0)
+          {
+              count++;
+          }
+     }
+     if(count!=1 && count!=2)
+     {
+         cout<<"Not prime";
+     }
+     else
+     {
+         cout<<" Prime";
+     }
+    return 0;
+}
