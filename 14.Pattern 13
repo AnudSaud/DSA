@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i,j,n;
+    char start='A';
+    
+    cout<<"Enter Rows"<<endl;
+    cin>>n;
+    
+  for(i=1; i<=n; i++)
+    {   
+        for(j=i; j>0; j--)
+         {
+             cout<<start<<" ";
+             start++;
+         }
+          cout<<endl;
+    }
+    return 0;
+}
