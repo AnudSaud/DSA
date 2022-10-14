@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+
+int main() {
+    int i,next,N;
+    int n1=0,n2=1;
+    
+    cout<<"Enter the value of N"<<endl;
+    cin>>N;
+    
+    cout<<n1<<" "<<n2<<" ";
+    
+    for(i=0; i<=N; i++)
+    {
+       next=n1+n2;
+       n1=n2;
+       n2=next;
+       cout<<next<<" ";
+    }
+ 
+    return 0;
+}
