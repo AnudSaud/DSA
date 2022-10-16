@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i,a[4],count =0;
+    
+    
+    
+    cout<<"Enter the binary number with a space in between each digit"<<endl;
+    
+    for(int i=0; i<4; i++)
+     {
+         cin>>a[i];
+         
+     }
+     
+     for(int i=0; i<4; i++)
+     {
+     //cout<<a[i];
+     if(a[i]==1)
+      {
+          count++;
+      }
+     
+     }
+     cout<<"Number of 1's are " <<count;
+
+    return 0;
+}
