@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   
+   int a[10]={6,12,8,14};
+   int i,temp;
+   
+   for(i=0; i<4; i++)
+    {
+        if(a[i]>a[i+1])
+         {
+             temp=a[i];
+             a[i]=a[i+1];
+             a[i+1]=temp;
+         }
+    }
+   cout<<"MAX = "<<a[i]<<endl;
+   cout<<"MIN = "<<a[0]<<endl;
+   
+   
+    return 0;
+}
